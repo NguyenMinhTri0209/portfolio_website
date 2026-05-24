@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Great+Vibes&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, serif;
+  
+  --color-blue-bg: #E8F2FF;
+  --color-blue-accent: #2A5BFF;
+  --color-blue-dark: #1F45CC;
+  --color-sky-light: #D6E7FF;
+  
+  --color-fixtek-main: #2756FF;
+  --color-fixtek-dark: #1C00FF;
+  --color-fixtek-light: #F0F4FF;
+
+  --color-gachdo-maroon: #6B171D;
+  --color-gachdo-bg: #FFF7EA;
+  --color-gachdo-tan: #FDF9DF;
+  --color-gachdo-gold: #F9D0A8;
+  --color-gachdo-dark: #3F090E;
+
+  --color-calofix-bg: #123011;
+  --color-calofix-green: #8ED72E;
+  --color-calofix-dark: #041203;
+
+  --color-phencha-olive: #6F8B60;
+  --color-phencha-dark: #1C2B1C;
+  --color-phencha-bg: #F5F7F2;
+
+  --color-offwhite: #FAFAFA;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    background-color: var(--color-offwhite);
+    color: #111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
+.text-balance {
+    text-wrap: balance;
+}
+
+/* Custom Scrollbar for better UI */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.bg-about-me-page {
+  background: radial-gradient(circle at top left, #dbeafe 0%, #e0f2fe 28%, #eff6ff 58%, #ffffff 100%);
+}
+
+.about-me-watermark {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cpolygon points='250,15 323,220 475,220 350,340 395,490 250,395 105,490 150,340 25,220 177,220' fill='%232a5bff' opacity='0.06'/%3E%3C/svg%3E");
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-size: 550px;
+}
+
+.about-me-star {
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(0.75px);
+}
+
+.polaroid-frame {
+  transform: rotate(-3deg);
+}
+
+.dotted-frame {
+  position: relative;
+  display: inline-flex;
+  border: 1px dashed rgba(42, 91, 255, 0.45);
+  border-radius: 0.75rem;
+  padding: 0.55rem 0.85rem;
+  color: #1f45cc;
+}
+
+.dotted-frame::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(42, 91, 255, 0.45);
+  top: -6px;
+  left: -6px;
+  box-shadow: calc(100% - 4px) 0 0 #ffffff, 0 calc(100% - 4px) 0 #ffffff, calc(100% - 4px) calc(100% - 4px) 0 #ffffff;
+}
+
+.pill-skew {
+  display: inline-flex;
+  transform: skew(-10deg);
+}
+
+.content-tab-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.font-svn-chopin {
+  font-family: "SVN-Chopin Script", cursive;
+}
+
+.font-great-vibes {
+  font-family: "Great Vibes", cursive;
+}
+
+.typography-banner {
+  width: 100%;
+  background: #265cf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.typography-banner__text {
+  position: relative;
+  max-width: 1200px;
+  font-family: "SVN-Chopin Script", "Great Vibes", cursive;
+  font-style: normal;
+  font-variant-ligatures: common-ligatures contextual;
+  font-feature-settings: "liga" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  color: #ffffff;
+  font-size: clamp(3.75rem, 6vw, 5.5rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.typography-banner__text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  width: 100%;
+  height: 3px;
+  background: #00b4ff;
+  transform: translateY(10%);
+}
+
+.polaroid-frame {
+  transform: rotate(-3deg);
+}
+
+.dotted-frame {
+  position: relative;
+  display: inline-flex;
+  border: 1px dashed rgba(42, 91, 255, 0.45);
+  border-radius: 0.75rem;
+  padding: 0.55rem 0.85rem;
+  color: #1f45cc;
+}
+
+.dotted-frame::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(42, 91, 255, 0.45);
+  top: -6px;
+  left: -6px;
+  box-shadow: calc(100% - 4px) 0 0 #ffffff, 0 calc(100% - 4px) 0 #ffffff, calc(100% - 4px) calc(100% - 4px) 0 #ffffff;
+}
+
+.pill-skew {
+  display: inline-flex;
+  transform: skew(-10deg);
+}
+
+.content-tab-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
