@@ -1,6 +1,11 @@
-import { Mail, Phone, MapPin, Globe } from "lucide-react";
 import vectorBackground from "../../img/Vector.png";
 import vector1Background from "../../img/Vector1.png";
+import group7Icon from "../../img/Group 7.png";
+import group5Icon from "../../img/Group 5.png";
+import group58Icon from "../../img/Group 58.png";
+import group141Icon from "../../img/Group 141.png";
+import group112Title from "../../img/Group 112.png";
+import portraitFrame from "../../img/Frame 1000004040.png";
 import image7 from "../../img/image 7.png";
 import image8 from "../../img/image 8.png";
 import image9 from "../../img/image 9.png";
@@ -8,6 +13,9 @@ import image10 from "../../img/image 10.png";
 import image12 from "../../img/image 12.png";
 
 export function AboutMe() {
+  const personalSkills = ['Creative', 'Adaptability', 'Teamwork', 'Proactive', 'Time management', 'Problem-solving', 'Communication', 'Collaboration'];
+  const technicalSkills = ['Branding', 'SocialPost', 'UX-Research', 'UI-Research', 'Layoutdesign', 'Ilustrator'];
+
   return (
     <section
       id="about-me"
@@ -17,49 +25,45 @@ export function AboutMe() {
       <div className="absolute -left-[25%] top-[30%] w-[1605px] h-[1000px] bg-[#2455bb]/[0.5] mix-blend-hard-light opacity-60 blur-[168px] -z-10 -scale-x-100 rotate-[17deg]" />
       <div className="absolute left-[-10.43%] right-[-11.86%] top-[5.32%] bottom-[61.46%] bg-[#285ce3]/[0.13] -z-10" />
       <img
-        src={vectorBackground}
-        alt=""
-        aria-hidden="true"
-        className="about-me-vector absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none z-0"
-      />
-      <img
         src={vector1Background}
         alt=""
         aria-hidden="true"
         className="about-me-vector-1 absolute inset-0 w-full h-full object-cover opacity-60 pointer-events-none z-0 mix-blend-multiply"
       />
+      <img
+        src={vectorBackground}
+        alt=""
+        aria-hidden="true"
+        className="about-me-vector absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none z-0"
+      />
       <div className="relative z-10 mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
           {/* Left Column: Photo & Contact */}
           <div className="lg:col-span-4 flex flex-col gap-6">
-            <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden bg-gray-200">
+            <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden">
               <img
-                src="https://placehold.co/600x800/e2e8f0/64748b?text=Portrait"
+                src={portraitFrame}
                 alt="Portrait"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg">
-                <span className="font-display italic text-2xl text-blue-accent pr-4 border-r border-gray-300 mr-4">thuy.</span>
-                <span className="font-semibold text-lg uppercase tracking-wider text-blue-dark">ngoc quyen mai</span>
-              </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col gap-4">
-              <h3 className="font-bold text-lg text-blue-dark mb-2">contact_</h3>
-              <div className="flex items-center gap-3 text-sm text-gray-600">
-                <Globe className="w-4 h-4 text-blue-accent" />
+            <div className="p-6 flex flex-col gap-4 text-[#1A3FB0]">
+              <h3 className="font-bold text-lg mb-2">contact*</h3>
+              <div className="flex items-center gap-3 text-sm">
+                <img src={group7Icon} alt="" aria-hidden="true" className="w-5 h-5 object-contain" />
                 <span>behance.net/ngoquyenmai</span>
               </div>
-              <div className="flex items-center gap-3 text-sm text-gray-600">
-                <Phone className="w-4 h-4 text-blue-accent" />
+              <div className="flex items-center gap-3 text-sm">
+                 <img src={group5Icon} alt="" aria-hidden="true" className="w-5 h-5 object-contain" />
                 <span>0304383834</span>
               </div>
-              <div className="flex items-center gap-3 text-sm text-gray-600">
-                <MapPin className="w-4 h-4 text-blue-accent" />
+              <div className="flex items-center gap-3 text-sm">
+                <img src={group141Icon} alt="" aria-hidden="true" className="w-5 h-5 object-contain" />
                 <span>Thu Duc, HCM City</span>
               </div>
-              <div className="flex items-center gap-3 text-sm text-gray-600">
-                <Mail className="w-4 h-4 text-blue-accent" />
+              <div className="flex items-center gap-3 text-sm">
+                <img src={group58Icon} alt="" aria-hidden="true" className="w-5 h-5 object-contain" />
                 <span>maiqnguyennn@gmail.com</span>
               </div>
             </div>
@@ -81,36 +85,47 @@ export function AboutMe() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
               <div className="flex flex-col gap-4">
-                <h3 className="font-display italic text-3xl text-blue-accent border-b border-gray-200 pb-2">Education</h3>
-                <div className="mt-2 text-gray-600">
+                <div className="border-b border-gray-200 pb-2">
+                  <img src={group112Title} alt="Education" className="h-20 w-auto object-contain" />
+                </div>
+                <div className="text-gray-600">
                   <p className="font-medium text-sm text-gray-500 mb-1">// 2021 - 2025</p>
                   <p className="font-bold text-lg text-blue-dark mb-1">FPT UNIVERSITY - Vietnam</p>
                   <p className="text-sm">Bachelor's Degree in Graphic Design<br/>Major in Branding and UI/UX Design</p>
                 </div>
               </div>
-              <div className="flex flex-col gap-6">
-                <div>
-                  <h3 className="font-display italic text-3xl text-blue-accent border-b border-gray-200 pb-2 mb-4">Personal skills</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {['Creative', 'Adaptability', 'Teamwork', 'Proactive', 'Time management', 'Problem-solving', 'Communication', 'Collaboration'].map(skill => (
-                      <span key={skill} className="px-3 py-1 bg-blue-50 text-blue-800 rounded-full text-xs font-medium border border-blue-100">
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+              <div>
+                <h3 className="font-display font-bold text-3xl text-blue-dark border-b border-gray-200 pb-2 mb-4">technical skills</h3>
+                <div className="flex flex-wrap gap-2">
+                  {technicalSkills.map(skill => (
+                    <span key={skill} className="px-3 py-1 bg-[#4271FF] text-white rounded-full text-xs font-medium border border-[#4271FF]">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
+              </div>
 
-                <div>
-                  <h3 className="font-display italic text-3xl text-blue-accent border-b border-gray-200 pb-2 mb-4">Software skills</h3>
-                  <div className="flex flex-wrap gap-3">
-                    {[image7, image8, image9, image10, image12].map((icon, index) => (
-                      <div key={index} className="w-10 h-10 rounded-lg overflow-hidden bg-white border border-gray-200 flex items-center justify-center">
-                        <img src={icon} alt={`software icon ${index + 1}`} className="w-full h-full object-contain" />
-                      </div>
-                    ))}
-                  </div>
+              <div>
+                <h3 className="font-display font-bold text-3xl text-blue-dark border-b border-gray-200 pb-2 mb-4">personal skills</h3>
+                <div className="flex flex-wrap gap-2">
+                  {personalSkills.map(skill => (
+                    <span key={skill} className="px-3 py-1 bg-white text-blue-800 rounded-full text-xs font-medium border border-blue-dark">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h3 className="font-display font-bold text-3xl text-blue-dark border-b border-gray-200 pb-2 mb-4">software skills</h3>
+                <div className="flex flex-wrap gap-3">
+                  {[image7, image8, image9, image10, image12].map((icon, index) => (
+                    <div key={index} className="w-10 h-10 rounded-lg overflow-hidden bg-white border border-gray-200 flex items-center justify-center">
+                      <img src={icon} alt={`software icon ${index + 1}`} className="w-full h-full object-contain" />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

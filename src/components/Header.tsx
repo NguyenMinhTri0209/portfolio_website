@@ -16,7 +16,7 @@ export function Header() {
       <div className="w-full bg-gradient-to-r from-blue-accent to-blue-dark text-white py-3 overflow-hidden my-0">
         <Marquee gradient={false} speed={50}>
           {[...Array(10)].map((_, i) => (
-            <span key={i} className="text-lg md:text-xl font-great-vibes italic mx-4 md:mx-8 whitespace-nowrap opacity-90">
+             <span key={i} className="text-2xl md:text-3xl font-great-vibes italic mx-4 md:mx-8 whitespace-nowrap opacity-90">
               welcome to my portfolio - rhenmeo <span className="text-blue-300 ml-4 md:ml-8">•</span>
             </span>
           ))}
