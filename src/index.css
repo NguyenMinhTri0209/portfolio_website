@@ -8,7 +8,7 @@
   
   --color-blue-bg: #E8F2FF;
   --color-blue-accent: #2A5BFF;
-  --color-blue-dark: #1F45CC;
+  --color-blue-dark: #285CE3;
   --color-sky-light: #D6E7FF;
   
   --color-fixtek-main: #2756FF;
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px dashed rgba(42, 91, 255, 0.45);
   border-radius: 0.75rem;
   padding: 0.55rem 0.85rem;
-  color: #1f45cc;
+  color: #285CE3;
 }
 
 .dotted-frame::before {
@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px dashed rgba(42, 91, 255, 0.45);
   border-radius: 0.75rem;
   padding: 0.55rem 0.85rem;
-  color: #1f45cc;
+  color: #285CE3;
 }
 
 .dotted-frame::before {

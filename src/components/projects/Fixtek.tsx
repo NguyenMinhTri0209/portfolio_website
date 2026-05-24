@@ -27,10 +27,10 @@ export function Fixtek() {
           {/* Left Text */}
           <div className="flex flex-col gap-6 text-[15px] md:text-[16px] font-semibold leading-relaxed text-[#2768FF]">
             <p>
-              <span className="bg-[#B9D0FF] px-1 font-bold text-[#1F45CC]">FixTek is a mobile application</span> that quickly connects customers with technicians and repair shops specializing in electronic devices, smart technologies, and new hard-to-repair gadgets, operating within Ho Chi Minh City.
+              <span className="bg-[#B9D0FF] px-1 font-bold text-[#285CE3]">FixTek is a mobile application</span> that quickly connects customers with technicians and repair shops specializing in electronic devices, smart technologies, and new hard-to-repair gadgets, operating within Ho Chi Minh City.
             </p>
             <p>
-              <span className="bg-[#B9D0FF] px-1 font-bold text-[#1F45CC]">The app follows a Grab-like model,</span> allowing users to easily book repair appointments, track progress, and make online payments. The idea was born from real needs: promoting a green lifestyle, reducing electronic waste by extending product lifecycles, while creating job opportunities for technicians and supporting small repair shops.
+              <span className="bg-[#B9D0FF] px-1 font-bold text-[#285CE3]">The app follows a Grab-like model,</span> allowing users to easily book repair appointments, track progress, and make online payments. The idea was born from real needs: promoting a green lifestyle, reducing electronic waste by extending product lifecycles, while creating job opportunities for technicians and supporting small repair shops.
             </p>
             <p>
               FixTek not only delivers environmental benefits but also addresses key market issues: finding reliable repair services, transparent pricing, and providing consumers with a convenient experience.
@@ -110,10 +110,10 @@ export function Fixtek() {
            
            <div className="font-semibold text-[15px] md:text-[16px] leading-relaxed flex flex-col gap-6 w-full text-left">
              <p>
-               <span className="font-bold text-[#1F45CC]">About M-O:</span> M-O is a robot from Wall-E whose mission is to clean with precision and meticulous attention to detail, always persistent until the job is done. Small but highly efficient, M-O represents professionalism and optimized technology.
+               <span className="font-bold text-[#285CE3]">About M-O:</span> M-O is a robot from Wall-E whose mission is to clean with precision and meticulous attention to detail, always persistent until the job is done. Small but highly efficient, M-O represents professionalism and optimized technology.
              </p>
              <p>
-               <span className="font-bold text-[#1F45CC]">Connection to FixTek:</span> FixTek follows the spirit of M-O by delivering precise, transparent, and reliable repair services, helping extend product lifespan and keeping everything running "to standard," just as M-O fulfills his mission.
+               <span className="font-bold text-[#285CE3]">Connection to FixTek:</span> FixTek follows the spirit of M-O by delivering precise, transparent, and reliable repair services, helping extend product lifespan and keeping everything running "to standard," just as M-O fulfills his mission.
              </p>
            </div>
         </div>
@@ -173,10 +173,10 @@ export function Fixtek() {
       <div className="w-full bg-[#F3F7FF] py-16">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col gap-4">
            <p className="text-[16px] md:text-[17px] font-medium leading-relaxed max-w-4xl">
-              <span className="font-bold text-[#1F45CC]">Goal:</span> To connect urban residents with reliable electronics technicians via a Grab-like model. By simplifying smart device repairs, the project extends product lifecycles and reduces electronic waste, promoting a sustainable lifestyle in Ho Chi Minh City.
+              <span className="font-bold text-[#285CE3]">Goal:</span> To connect urban residents with reliable electronics technicians via a Grab-like model. By simplifying smart device repairs, the project extends product lifecycles and reduces electronic waste, promoting a sustainable lifestyle in Ho Chi Minh City.
            </p>
            <p className="text-[16px] md:text-[17px] font-medium leading-relaxed max-w-4xl">
-              <span className="font-bold text-[#1F45CC]">Solution:</span> The design utilizes a professional blue palette <span className="font-bold text-black border-b-[3px] border-[#2768FF] pb-0.5 inline-block leading-none bg-[#D4E1FF]/40">(#2768FF)</span> to convey trust and efficiency. The interface ensures transparency through clear pricing and real-time tracking, while the <span className="font-bold text-[#1F45CC]">"one-tap"</span> experience streamlines the booking process.
+              <span className="font-bold text-[#285CE3]">Solution:</span> The design utilizes a professional blue palette <span className="font-bold text-black border-b-[3px] border-[#2768FF] pb-0.5 inline-block leading-none bg-[#D4E1FF]/40">(#2768FF)</span> to convey trust and efficiency. The interface ensures transparency through clear pricing and real-time tracking, while the <span className="font-bold text-[#285CE3]">"one-tap"</span> experience streamlines the booking process.
            </p>
         </div>
       </div>
@@ -291,10 +291,10 @@ export function Fixtek() {
 
               <div className="mt-12 flex flex-col gap-6 font-semibold text-[17px] text-[#2768FF]">
                  <h4 className="font-black uppercase tracking-widest text-[#2768FF] text-[18px]">PRIVILEGES OF JOINING FIXTEK:</h4>
-                 <p><span className="font-bold text-[#1F45CC]">Abundant Customers:</span> Orders automatically generated near your location.</p>
-                 <p><span className="font-bold text-[#1F45CC]">Absolute Freedom:</span> Open the app and take jobs whenever you're free.</p>
-                 <p><span className="font-bold text-[#1F45CC]">Comprehensive Support:</span> Discounts on tools, parts, and uniforms at wholesale prices.</p>
-                 <p><span className="font-bold text-[#1F45CC]">Transparency:</span> Track and withdraw your income quickly through the app.</p>
+                 <p><span className="font-bold text-[#285CE3]">Abundant Customers:</span> Orders automatically generated near your location.</p>
+                 <p><span className="font-bold text-[#285CE3]">Absolute Freedom:</span> Open the app and take jobs whenever you're free.</p>
+                 <p><span className="font-bold text-[#285CE3]">Comprehensive Support:</span> Discounts on tools, parts, and uniforms at wholesale prices.</p>
+                 <p><span className="font-bold text-[#285CE3]">Transparency:</span> Track and withdraw your income quickly through the app.</p>
                  
                  <p className="font-bold text-xl mt-6 italic">Download the Fixtek Technician app.</p>
               </div>
