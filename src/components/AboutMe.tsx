@@ -6,6 +6,8 @@ import group58Icon from "../../img/Group 58.png";
 import group141Icon from "../../img/Group 141.png";
 import group112Title from "../../img/Group 112.png";
 import portraitFrame from "../../img/Frame 1000004040.png";
+import objectsIcon from "../../img/OBJECTS.png";
+import sparkleIcon from "../../img/13.png";
 import image7 from "../../img/image 7.png";
 import image8 from "../../img/image 8.png";
 import image9 from "../../img/image 9.png";
@@ -91,8 +93,11 @@ export function AboutMe() {
                   <img src={group112Title} alt="Education" className="h-20 w-auto object-contain" />
                 </div>
                 <div className="text-gray-600">
-                  <p className="font-medium text-sm text-gray-500 mb-1">// 2021 - 2025</p>
-                  <p className="font-bold text-lg text-blue-dark mb-1">FPT UNIVERSITY - Vietnam</p>
+                  <p className="mb-1 flex items-center gap-2 text-sm font-extrabold text-blue-dark">
+                    <img src={objectsIcon} alt="" aria-hidden="true" className="h-3 w-auto object-contain" />
+                    <span>2021 - 2026</span>
+                  </p>
+                  <p className="font-extrabold text-lg text-blue-dark mb-1">FPT UNIVERSITY - Vietnam</p>
                   <p className="text-sm">Bachelor's Degree in Graphic Design<br/>Major in Branding and UI/UX Design</p>
                 </div>
               </div>
@@ -100,7 +105,7 @@ export function AboutMe() {
                 <h3 className="font-display font-bold text-3xl text-blue-dark border-b border-gray-200 pb-2 mb-4">technical skills</h3>
                 <div className="flex flex-wrap gap-2">
                   {technicalSkills.map(skill => (
-                    <span key={skill} className="px-3 py-1 bg-[#4271FF] text-white rounded-full text-xs font-medium border border-[#4271FF]">
+                    <span key={skill} className="relative inline-flex px-3 py-1 bg-[#4271FF] text-white rounded-full text-xs font-medium border border-[#4271FF]">
                       {skill}
                     </span>
                   ))}
