@@ -15,7 +15,7 @@ import image10 from "../../img/image 10.png";
 import image12 from "../../img/image 12.png";
 
 export function AboutMe() {
-  const personalSkills = ['Creative', 'Adaptability', 'Teamwork', 'Proactive', 'Time management', 'Problem-solving', 'Communication', 'Collaboration'];
+  const personalSkills = ['Creative - Openness', 'Creative', 'Proactive', 'Time Management', 'Responsibility', 'Teamwork', 'Communication', 'Collaboration'];
   const technicalSkills = ['Branding', 'SocialPost', 'UX-Research', 'UI-Research', 'Layoutdesign', 'Ilustrator'];
 
   return (
@@ -101,23 +101,22 @@ export function AboutMe() {
                   <p className="text-sm">Bachelor's Degree in Graphic Design<br/>Major in Branding and UI/UX Design</p>
                 </div>
               </div>
-              <div className="h-[152px] w-[265px] overflow-hidden">
-                <h3 className="font-display font-bold text-[28px] leading-none text-blue-dark border-b border-gray-200 pb-2 mb-3">technical skills</h3>
-                <div className="flex flex-wrap gap-1.5">
+              <div className="w-[265px] h-[152px] shrink-0 box-border overflow-hidden">
+                <h3 className="font-display font-bold text-[26px] leading-none text-[#285CE3] border-b border-gray-200 pb-2 mb-2">technical skills</h3>
+                <div className="flex max-h-[106px] flex-wrap content-start gap-1 overflow-hidden">
                   {technicalSkills.map(skill => (
-                    <span key={skill} className="relative inline-flex whitespace-nowrap px-2.5 py-1 bg-[#285CE3] text-white rounded-full text-xs font-medium border border-[#285CE3]">
+                    <span key={skill} className="relative inline-flex max-w-full whitespace-nowrap overflow-hidden px-2 py-0.5 bg-[#285CE3] text-white rounded-full text-[11px] font-medium border border-[#285CE3]">
                       {skill}
-                      {skill === 'UI-Research'}
                     </span>
                   ))}
                 </div>
               </div>
 
-              <div className="h-[178px] w-[292px] overflow-hidden">
-                <h3 className="font-display font-bold text-[28px] leading-none text-blue-dark border-b border-gray-200 pb-2 mb-3">personal skills</h3>
-                <div className="flex flex-wrap gap-1.5">
+              <div className="w-[292px] h-[178px] max-w-full box-border overflow-hidden">
+                <h3 className="font-display font-bold text-[26px] leading-none text-[#285CE3] border-b border-gray-200 pb-2 mb-2">personal skills</h3>
+                <div className="flex flex-wrap gap-1">
                   {personalSkills.map(skill => (
-                    <span key={skill} className="whitespace-nowrap px-2.5 py-1 bg-white text-[#285CE3] rounded-full text-xs font-medium border border-blue-dark">
+                    <span key={skill} className="whitespace-nowrap px-2 py-0.5 bg-white text-[#285CE3] rounded-full text-[11px] font-medium border border-[#285CE3]">
                       {skill}
                     </span>
                   ))}
